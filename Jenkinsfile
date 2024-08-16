@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh '''
 				sudo rm -rf *
-    				git clone https://github.com/divyanshu-arya/Priya-project.git/
+    				git clone https://github.com/divyanshu-arya/java-maven-jenkins-ci-cd/
 				cd java-maven-jenkins-ci-cd/
 				docker build -t tomcat .
 				docker run -d -p 8080:8080 --name tomcat-server tomcat
