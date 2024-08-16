@@ -10,7 +10,7 @@ pipeline {
                 sh '''
 				sudo rm -rf *
     				git clone https://github.com/divyanshu-arya/Priya-project.git/
-				cd Priya-project
+				cd java-maven-jenkins-ci-cd/
 				docker build -t tomcat .
 				docker run -d -p 8080:8080 --name tomcat-server tomcat
     				cp /home/ubuntu/Mumbai.pem .
